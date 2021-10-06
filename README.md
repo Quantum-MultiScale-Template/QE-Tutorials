@@ -1,2 +1,2 @@
-# QMS-2021-Tutorials
-Tutorials for Q-MS School 2021
+# Quantum Espresso Tutorials
+Tutorials on Quantum Espresso for the Q-MS School 
