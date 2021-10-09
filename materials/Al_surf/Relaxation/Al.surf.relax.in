@@ -1,0 +1,59 @@
+&control
+    calculation = 'relax'
+    restart_mode='from_scratch',
+    prefix='Alsurf',
+    tstress = .true.
+    tprnfor = .true.
+    pseudo_dir = '../../Pseudo/',
+    outdir='./tmp'
+    forc_conv_thr = 1.d-3
+ /
+ &system
+   ibrav     = 0,
+   nat       = 16,
+   ntyp      = 1,
+   ecutwfc   = 20.d0,
+   ecutrho =160.0,
+   occupations='smearing',
+   degauss=0.02,
+   smearing='mp',
+ /
+
+ /
+ &electrons
+    diagonalization='david'
+    conv_thr = 1.0e-8
+    mixing_beta = 0.2
+    mixing_mode = 'local-TF'
+ /
+ &ions
+ /
+
+CELL_PARAMETERS Angstrom
+4.891632 0.        0.
+0.       5.648371  0.
+0.       0.        20.
+
+ATOMIC_SPECIES
+  Al  26.98  Al.pbe-nl-kjpaw_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS Angstrom
+Al       0.000000000   0.000000000   0.000000000 0 0 0 
+Al       0.000000000   2.824185000   0.000000000 0 0 0 
+Al       2.445815930   1.412094740   0.000000000 0 0 0 
+Al       2.445815930   4.236279740   0.000000000 0 0 0 
+Al       3.261086330   0.000001150   2.305936980 0 0 0 
+Al       3.261086330   2.824186150   2.305936980 0 0 0 
+Al       0.815273280   1.412091410   2.305936980 0 0 0 
+Al       0.815273280   4.236276410   2.305936980 0 0 0 
+Al       4.076359610   1.409524042   4.611873960
+Al       4.076359610   4.222390237   4.611873960
+Al       1.630546560   2.817504638   4.611873960
+Al       1.630546560   5.644794718   4.611873960
+Al       0.000000000   0.000000000   6.917810000
+Al       0.000000000   2.824185000   6.917810000
+Al       2.445815930   1.412094740   6.917810000
+Al       2.445815930   4.236279740   6.917810000
+
+K_POINTS automatic
+ 2 2 1 1 1 0
