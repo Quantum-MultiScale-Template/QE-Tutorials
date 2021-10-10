@@ -1,0 +1,45 @@
+&control
+    calculation = 'scf'
+    restart_mode='from_scratch'
+    prefix='GaAs',
+    pseudo_dir = '../../Pseudo/',
+    outdir='./tmp'
+ /
+ &system
+    ibrav=  2, 
+    celldm(1) = 10.901,
+    nat=  2, 
+    ntyp= 2,
+    nbnd = 12,       ! 9 full + 3 empty states
+    ecutwfc = 43.0,  ! energy in Ry
+    ecutrho = 300.   ! energy in Ry
+    input_dft = 'hse'
+    occupations='smearing',   
+    degauss=0.002,
+    smearing='mv'
+ /
+ &electrons
+    diagonalization='david'
+    conv_thr = 1.0e-6
+    mixing_beta = 0.4
+ /
+ATOMIC_SPECIES
+  Ga 69.723000d0  Ga.pbe-dnl-kjpaw_psl.1.0.0.UPF
+  As 74.921600d0  As.pbe-n-kjpaw_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS crystal
+ Ga -0.125 -0.125 -0.125
+ As 0.125 0.125 0.125
+
+K_POINTS automatic
+ 2 2 2 0 0 0
+
+ADDITIONAL_K_POINTS tpiba_b
+  5
+   L         20
+   gG        20
+   X          0
+ 1.0 1.0 0.0 30
+   gG         1
+
+

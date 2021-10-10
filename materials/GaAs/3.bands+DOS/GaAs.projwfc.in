@@ -1,0 +1,7 @@
+ &projwfc
+    outdir='./tmp'
+    prefix='GaAs'
+    Emin=0.0, Emax=12.0, DeltaE=0.05
+    ngauss=1, degauss=0.01
+ /
+

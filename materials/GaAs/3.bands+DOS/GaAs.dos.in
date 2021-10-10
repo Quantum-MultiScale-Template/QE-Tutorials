@@ -1,0 +1,7 @@
+ &dos
+    outdir='./tmp'
+    prefix='GaAs'
+    fildos='GaAs.dos',
+    Emin=0, Emax=10.0, DeltaE=0.05
+ /
+
