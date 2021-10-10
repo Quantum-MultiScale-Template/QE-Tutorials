@@ -1,0 +1,34 @@
+&control
+    calculation = 'scf'
+    restart_mode='from_scratch',
+    prefix='Al',
+    tstress = .true.
+    tprnfor = .true.
+    pseudo_dir = '../../Pseudo/',
+    outdir='../tmp'
+ /
+ &system
+    ibrav=  2, 
+    celldm(1) = xxxx,
+    nat=  1, 
+    ntyp= 1,
+    ecutwfc = 30.0, ! energy in Ry
+    ecutrho = 120. ! energy in Ry
+    occupations='smearing'
+    smearing ='cold'
+    degauss=0.005
+ /
+ &electrons
+    diagonalization='david'
+    conv_thr = 1.0e-8
+    mixing_beta = 0.4
+ /
+ATOMIC_SPECIES
+   Al  26.98 Al.pbe-nl-kjpaw_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS crystal
+ Al  0.  0.  0.
+
+K_POINTS automatic
+  16 16 16 1 1 1
+
