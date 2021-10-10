@@ -24,10 +24,10 @@ Tutorials on Quantum Espresso for the Q-MS School
 2. Compute the band diagram and the density of states of the slab
 
 ## Challenge
-### Compute the adsorption energy of H$_2$ on Al(111) 
+### Compute the adsorption energy of H$$_2$$ on Al(111) 
 
 Hints:
-- Adsorption energy: $E_{ads}=E(Al(111)+H_2)-E(Al(111))-E(H_2)$
+- Adsorption energy: $$E_{ads}=E(Al(111)+H_2)-E(Al(111))-E(H_2)$$
 - Put H2 in atop position (see example NOT CONVERGED!!!)
 - Compute E(H$_2$) in the same cell as Al(111)
 - Check convergence with PW cutoff and k-points
