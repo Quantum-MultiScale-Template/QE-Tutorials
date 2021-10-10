@@ -24,7 +24,7 @@ Tutorials on Quantum Espresso for the Q-MS School
 2. Compute the band diagram and the density of states of the slab
 
 ## Challenge
-###Compute the adsorption energy of H2 on Al(111) 
+### Compute the adsorption energy of H2 on Al(111) 
 
 Hints:
 Adsorption energy: ￼
