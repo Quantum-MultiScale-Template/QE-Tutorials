@@ -18,3 +18,16 @@ Tutorials on Quantum Espresso for the Q-MS School
 - Test the plane waves cutoff 
 - Test the effect of the smearing 
 4. Compute the bands and the electronic density of states
+
+## Al(111) surface
+1. Optimize the geometry of an Al (111) slab (4 layers thick)  
+2. Compute the band diagram and the density of states of the slab
+
+## Challenge
+###Compute the adsorption energy of H2 on Al(111) 
+
+Hints:
+Adsorption energy: ￼
+Put H2 in atop position (see example NOT CONVERGED!!!)
+Compute ￼ in the same cell as ￼
+Check convergence with PW cutoff and k-points
