@@ -1,5 +1,5 @@
 # Quantum Espresso Tutorials
-Tutorials on Quantum Espresso for the Q-MS School 
+Tutorials on Quantum Espresso for the Q-MS School 2021
 
 ## GaAs: A direct gap semiconductor
 0. Run your first SCF calculation for GaAs
