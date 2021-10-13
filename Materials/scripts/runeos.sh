@@ -9,7 +9,7 @@ echo "Running QE with mpirun -np 4 $PWX"
 for iter in  9.0 9.5 10.0 10.5 11.0 11.5 12.0
 do
    sed "s/xxxx/${iter}/g" template.eos.in > scf.in
-   mpirun -np 4 pw.x < scf.in > scf.${iter}.log
+   mpirun -np 4 $PWX < scf.in > scf.${iter}.log
    grep volume  scf.${iter}.log | cut -b33-46 >> volume.dat
    grep ! scf.${iter}.log |cut -b33- >> energies.dat
 done
